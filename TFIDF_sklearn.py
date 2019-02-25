@@ -1,3 +1,4 @@
+from sklearn.feature_extraction.text import TfidfVectorizer
 # 语料
 corpus = [
         'this is the first document',
@@ -5,7 +6,7 @@ corpus = [
         'and the third one',
         'is this the first document'
     ]
-from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 tfidf_vec = TfidfVectorizer()
 tfidf_matrix = tfidf_vec.fit_transform(corpus)
